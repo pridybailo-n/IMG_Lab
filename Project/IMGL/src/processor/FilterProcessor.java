@@ -1,4 +1,9 @@
 package processor;
+
+/**
+ * Created by pridybailo-n on 02.12.2016.
+ */
+
 import models.MyImage;
 
 import java.awt.image.BufferedImage;

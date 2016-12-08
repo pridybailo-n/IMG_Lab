@@ -1,5 +1,9 @@
 package models;
 
+/**
+ * Created by pridybailo-n on 02.12.2016.
+ */
+
 public class MyRGB {
     private int red = 0;
     private int green = 0;

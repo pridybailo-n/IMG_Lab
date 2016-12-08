@@ -1,5 +1,8 @@
 package models;
 
+/**
+ * Created by pridybailo-n on 02.12.2016.
+ */
 
 import javafx.scene.image.ImageView;
 

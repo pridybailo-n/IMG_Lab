@@ -1,5 +1,9 @@
 package sample;
 
+/**
+ * Created by pridybailo-n on 01.12.2016.
+ */
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

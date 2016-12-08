@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
 <GridPane fx:id="gridPane" alignment="CENTER" hgap="10.0" prefHeight="324.0" prefWidth="543.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
   <children>
@@ -27,7 +28,7 @@
       <center>
         <Pane prefHeight="200.0" prefWidth="200.0">
           <children>
-            <ImageView fx:id="currentView" blendMode="DARKEN" fitHeight="255.0" fitWidth="395.0" layoutX="18.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="currentView" blendMode="DARKEN" fitHeight="255.0" fitWidth="395.0" layoutX="24.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
           </children>
         </Pane>
       </center>
@@ -35,7 +36,18 @@
         <VBox prefHeight="200.0" prefWidth="100.0" spacing="2.0">
           <children>
             <ListView fx:id="instrList" onMouseClicked="#getSelectedInstr" prefHeight="337.0" prefWidth="97.0" />
-            <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="97.0" text="apply" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Width: " />
+                <TextField id="height" fx:id="width" prefHeight="16.0" prefWidth="58.000091552734375" />
+              </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Height:" />
+                <TextField fx:id="height" prefWidth="200.0" />
+              </children>
+            </HBox>
           </children>
           <padding>
             <Insets left="3.0" top="8.0" />
@@ -50,12 +62,7 @@
                 <Menu disable="false" mnemonicParsing="false" text="File">
                   <items>
                     <MenuItem mnemonicParsing="false" onAction="#openNewImage" text="Open.." />
-                    <MenuItem mnemonicParsing="false" text="Save" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
+                    <MenuItem mnemonicParsing="false" onAction="#saveImage" text="Save" />
                   </items>
                 </Menu>
               </menus>
